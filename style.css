@@ -1,0 +1,111 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Task container */
+.task {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0px 6px 15px ;
+}
+
+/* Input field */
+#taskinput {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #0c51dc;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+
+button {
+  padding: 10px 15px;
+  background-color: #1282fa;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+#list {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+#list li {
+  background: #bbc7d0;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#list li input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(2);
+
+  
+}
+
+#list li button {
+  background-color: #dc3545;
+  font-size: 14px;
+}
+
+#list li button:hover {
+  background-color: #9b9495;
+}
+
+/* Responsive: adjust input and buttons on small screens */
+@media (max-width: 500px) {
+  #taskinput {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    margin: 5px 0 0 0;
+  }
+
+  .task {
+    padding: 15px;
+  }
+
+  #list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #list li button {
+    align-self: flex-end;
+    margin-top: 5px;
+  }
+}
